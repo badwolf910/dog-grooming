@@ -5,11 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dallas's Doggy Grooming</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#hours">Hours</a>
+      <a href="#previous">Photos of happy clients</a>
+    </div>
+    <span style="font-size: 30px; cursor: pointer;" onclick="openNav()"
+      >&#9776; Menu</span
+    >
     <div class="wrapper">
-      <header>
-        <h1>Dallas's Doggy Grooming</h1>
-      </header>
+      <br />
+      <h1>Dallas's</h1>
+      <h1>Doggy</h1>
+      <h1>Grooming</h1>
+    </div>
+
+    <div class="container-1">
+      <div class="box-1">
+        <h3>
+          Dallas's Doggy Grooming is the place your dog wants to visit for the
+          ultimate pamper.
+        </h3>
+        <p>
+          Does your doggy need a bath? How about those paws, are they looking
+          rough with chipped nails? Does the coat need some extra love? Here at
+          Dallas's Doggy Groming, we will make your dog look and feel fantastic.
+        </p>
+      </div>
+      <div class="box-2">
+        <h2 id="hours">Hours</h2>
+        <ul>
+          <li>Mon: 9am-6pm</li>
+          <li>Tues: 9am-6pm</li>
+          <li>Wed: 11am-6pm</li>
+          <li>Thurs:9am-6pm</li>
+          <li>Fri: 11am-8pm</li>
+          <li>Sat & Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="box-3">
+        <h2 id="services">Services</h2>
+        <ul>
+          <li>Luxury Bath: $25</li>
+          <li>Nail trim: $9</li>
+          <li>Full-Grooming: $30</li>
+          <li>Fur Coloring: $25</li>
+        </ul>
+      </div>
+      <div class="box-4">
+        <h2 id="contact">Contact Us</h2>
+        <ul>
+          <li>
+            <i class="material-icons">call</i><a href="#">555-555-5555</a>
+          </li>
+          <li>
+            <i class="material-icons">email</i><a href="#">email@email.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-3">
+      <div class="box-5">
+        <h2 id="previous">Previous Happy Clients</h2>
+        <img name="slide" width="200" height="300" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById('mySidenav').style.width = '250px';
+      }
+
+      function closeNav() {
+        document.getElementById('mySidenav').style.width = '0';
+      }
+    </script>
   </body>
 </html>

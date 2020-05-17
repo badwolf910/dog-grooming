@@ -1,6 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Sigmar+One&display=swap');
 
-.h1 {
-  font-family: 'Sigmar One', cursive, sans-serif;
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+header,
+section,
+footer,
+aside,
+nav article,
+figure,
+figcaption {
+  display: block;
+}
+
+body {
+  background-color: rgb(238, 237, 237);
+  font-size: 24px;
+}
+
+.wrapper {
+  width: auto;
+  margin: 0px auto;
+  border: 3px groove rgba(224, 186, 250);
+  background-image: url('images/logo.png'), url('images/wall.jpg');
+  background-repeat: no-repeat;
+  height: 220px;
+  background-color: rgb(179, 176, 176);
+}
+
+h1 {
+  font-family: 'Emilys Candy', cursive, sans-serif;
+  color: #110e11;
+  font-size: 28px;
+  text-align: right;
+  padding-right: 0.6em;
+}
+
+h2 {
+  font-family: 'Emilys Candy', cursive, sans-serif;
+  color: #110e11;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: 'Emilys Candy', cursive, sans-serif;
+  font-size: 22px;
+}
+
+ul {
+  list-style: none;
+  padding-right: 0.2em;
+}
+
+.sidenav {
+  font-family: 'Emilys Candy', cursive, sans-serif;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 245, 238, 0.856);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: #1d1818;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: #443b66 !important;
+  font-style: italic;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media (min-width: 768px) {
+  .container-1 {
+    display: flex;
+  }
+  .container-2 {
+    display: flex;
+  }
+  .container-3 {
+    display: flex;
+  }
+}
+
+.container-1 div {
+  border: 5px #ccc groove;
+  padding: 10px;
+}
+
+.box-1 {
+  flex: 6;
+  background-color: #fff;
+}
+.box-3 {
+  flex: 6;
+  background-color: #fff;
+}
+
+.box-2 {
+  flex: 2;
+  background-color: seashell;
   font-size: 80%;
 }
+.box-4 {
+  flex: 2;
+  background-color: seashell;
+  font-size: 75%;
+}
+.box-5 {
+  flex: 1;
+  background-color: #fff;
+  align-content: space-around;
+}
+
+.container-2 div {
+  border: 5px #ccc groove;
+  padding: 10px;
+}
+.container-3 div {
+  flex: 1;
+  border: 5px #ccc groove;
+  padding: 1px;
+  align-items: center;
+}
+
+/*.slide {
+
+  align-content: center}*/
